@@ -127,7 +127,7 @@ gitlab-automation/
 
 ## 📝 License
 
-This project is under the MIT License - see the file [LICENSE.md](LICENSE.md) for details.
+This project is under the MIT License - see the file [LICENSE.txt](LICENSE.txt) for details.
 
 ## ✨ Author
 
