@@ -22,6 +22,11 @@ def load_config():
 
 
 def main():
+    new_branch_name = 'feature/example'
+    base_branch = 'main'
+    new_tag_name = 'v1.0.0'
+    message = ''
+
     try:
         config = load_config()
         client = GitLabClient(config['gitlab_url'], config['private_token'])
@@ -30,8 +35,8 @@ def main():
         tag_manager = TagManager(client)
 
         project_id = config['project_id']
-        branch_manager.create_branch(project_id, 'feature/example', 'main')
-        tag_manager.create_tag(project_id, 'v1.0.0', 'main', 'primer ejemplo')
+        branch_manager.create_branch(project_id, new_branch_name, base_branch)
+        tag_manager.create_tag(project_id, new_tag_name, base_branch, message)
 
     except ValueError as e:
         print(f"Configuration error: {e}")
