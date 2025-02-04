@@ -2,6 +2,8 @@
 
 Automation tool for GitLab that allows the programmatic creation of branches and tags using the GitLab API.
 
+![Test Status](https://github.com/leiberbertel/gitlab_automation/actions/workflows/pytest.yml/badge.svg)
+
 ## 🚀 Features
 
 - Automatic branch creation
